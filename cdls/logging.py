@@ -1,4 +1,5 @@
-"""Logging facade for the CDLS.
+"""
+Logging facade for the CDLS.
 
 Attributes:
   _DEFAULT_BANNER_WIDTH (int): Banner will be this number of characters wide.

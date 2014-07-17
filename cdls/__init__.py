@@ -4,6 +4,7 @@ Cloudy Data Load Subsystem
 Attributes:
   _datasources (dict): Once a datasource is registered, it will be stored in
     this hash.
+  _db (mixed): Any object or module that implements the database interface.
   _logger (mixed): Any object or module that implements the standard logging
     interface (i.e., info, warning, error, exception).
 
@@ -21,8 +22,8 @@ from . import errors
 from . import datasources
 from cdls.errors import (DatabaseError, SourceConfigurationError, UnregisteredSourceError, CDLSError)
 
-_db = None
 _datasources = {}
+_db = None
 _logger = None
 
 def initialize():

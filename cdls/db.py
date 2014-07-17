@@ -1,3 +1,15 @@
+"""
+The database interface for the CDLS.
+
+Attributes:
+  _DBPATH (string): The file path to the sqlite database file.
+  _DDL_CREATE_LOADSTATS,
+  _DDL_DROP_LOADSTATS,
+  _DDL_CREATE_WAREHOUSE,
+  _DDL_DROP_WAREHOUSE (string): SQL DDL queries.
+  _conn (db): The sqlite3 database connection handle.
+"""
+
 import datetime
 import json
 import os

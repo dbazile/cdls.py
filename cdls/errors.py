@@ -1,4 +1,5 @@
-"""All custom errors used by the CDLS.
+"""
+All custom errors used by the CDLS.
 """
 
 import pprint

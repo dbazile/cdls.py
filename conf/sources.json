@@ -1,0 +1,29 @@
+{
+	"supported": [
+		{
+			"name": "Local File Queue",
+			"@QualifiedClassName": "cdls.datasources.LocalFileDataSource",
+			"description": "Scans a folder on the local filesystem for supported files",
+			"params": [
+				{"name":"queue_path", "type":"string", "required":true},
+				{"name":"archive_path", "type":"string", "required":true}
+			]
+		}
+	],
+	"registered": [
+		{
+			                 "id": "local0",
+			"@QualifiedClassName": "cdls.datasources.LocalFileDataSource",
+			        "description": "Scanner for the first local queue",
+			         "queue_path": "./_queue1",
+			       "archive_path": "./_archive1"
+		},
+		{
+			                 "id": "local1",
+			"@QualifiedClassName": "cdls.datasources.LocalFileDataSource",
+			        "description": "Scanner for the second local queue",
+			         "queue_path": "./_queue1",
+			       "archive_path": "./_archive1"
+		}
+	]
+}
